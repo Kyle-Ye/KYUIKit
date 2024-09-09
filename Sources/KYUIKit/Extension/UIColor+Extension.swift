@@ -8,6 +8,8 @@
 import UIKit
 import KYFoundation
 
+extension UIColor: KYProtocol {}
+
 extension KYWrapper where Base == UIColor {
     public enum UIColorHexFormat {
         case rgba

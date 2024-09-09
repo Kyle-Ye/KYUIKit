@@ -8,6 +8,8 @@
 import UIKit
 import KYFoundation
 
+extension UIFont: KYProtocol {}
+
 extension KYWrapper where Base == UIFont {
     public func lineSpacing(factor: Double) -> Double {
         base.pointSize * factor - base.lineHeight
